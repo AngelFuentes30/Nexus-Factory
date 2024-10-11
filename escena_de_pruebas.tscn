@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://ct6uuesjw8uu7"]
+
+[ext_resource type="PackedScene" uid="uid://ccvgl1nqv4ig2" path="res://transport_lvl_1.tscn" id="1_cxg0f"]
+[ext_resource type="PackedScene" uid="uid://b6xxaymk5a108" path="res://Icon.tscn" id="2_7fxwv"]
+
+[node name="Escena de Pruebas" type="Node2D"]
+
+[node name="Transport_lvl1" parent="." instance=ExtResource("1_cxg0f")]
+
+[node name="Transport_lvl2" parent="." instance=ExtResource("1_cxg0f")]
+position = Vector2(0, -32)
+
+[node name="Object_Base" parent="." instance=ExtResource("2_7fxwv")]
+position = Vector2(-52, -5)
