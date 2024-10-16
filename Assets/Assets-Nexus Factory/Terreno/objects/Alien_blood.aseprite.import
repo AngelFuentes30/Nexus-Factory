@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://d28tpualwk87c"
+path="res://.godot/imported/Alien_blood.aseprite-47f46f57b2983778de6a8f6010dd5cac.res"
+
+[deps]
+
+source_file="res://Assets/Assets-Nexus Factory/Terreno/objects/Alien_blood.aseprite"
+dest_files=["res://.godot/imported/Alien_blood.aseprite-47f46f57b2983778de6a8f6010dd5cac.res"]
+
+[params]
+

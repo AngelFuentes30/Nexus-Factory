@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://ci07jh1d4irpy"
+path="res://.godot/imported/human_blood.aseprite-e091b701970b856197bd6612853376ee.res"
+
+[deps]
+
+source_file="res://Assets/Assets-Nexus Factory/Terreno/objects/human_blood.aseprite"
+dest_files=["res://.godot/imported/human_blood.aseprite-e091b701970b856197bd6612853376ee.res"]
+
+[params]
+

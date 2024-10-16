@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://c5b6phpbwwcn3"
+path="res://.godot/imported/Seed_Tree.aseprite-0c720c98f51a57d0fede7388be6df970.res"
+
+[deps]
+
+source_file="res://Assets/Assets-Nexus Factory/Terreno/objects/Seed_Tree.aseprite"
+dest_files=["res://.godot/imported/Seed_Tree.aseprite-0c720c98f51a57d0fede7388be6df970.res"]
+
+[params]
+

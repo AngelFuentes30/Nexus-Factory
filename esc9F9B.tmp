@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://ct6uuesjw8uu7"]
+
+[ext_resource type="PackedScene" uid="uid://ccvgl1nqv4ig2" path="res://transport_lvl_1.tscn" id="1_cxg0f"]
+[ext_resource type="PackedScene" uid="uid://gtrdi6j7s4yh" path="res://player.tscn" id="3_d55gd"]
+
+[node name="Escena de Pruebas" type="Node2D"]
+
+[node name="Transport_lvl1" parent="." instance=ExtResource("1_cxg0f")]
+
+[node name="Transport_lvl2" parent="." instance=ExtResource("1_cxg0f")]
+position = Vector2(0, -32)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_d55gd")]
+position = Vector2(64, -2)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+zoom = Vector2(5, 5)

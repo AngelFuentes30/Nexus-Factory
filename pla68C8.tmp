@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://gtrdi6j7s4yh"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_xke7m"]
+[ext_resource type="PackedScene" uid="uid://dfxaxqflegalp" path="res://sprite_animated.tscn" id="2_p0ike"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8tish"]
+radius = 5.0
+height = 14.0
+
+[node name="Player" type="RigidBody2D"]
+script = ExtResource("1_xke7m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_8tish")
+
+[node name="SpriteAnimated" parent="." instance=ExtResource("2_p0ike")]

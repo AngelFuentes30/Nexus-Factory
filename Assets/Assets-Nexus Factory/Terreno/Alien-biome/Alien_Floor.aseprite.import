@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://b7iytlyoi4kx3"
+path="res://.godot/imported/Alien_Floor.aseprite-73b965f2733e04fa025ea88d23bef21e.res"
+
+[deps]
+
+source_file="res://Assets/Assets-Nexus Factory/Terreno/Alien-biome/Alien_Floor.aseprite"
+dest_files=["res://.godot/imported/Alien_Floor.aseprite-73b965f2733e04fa025ea88d23bef21e.res"]
+
+[params]
+

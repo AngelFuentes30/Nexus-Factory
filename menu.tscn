@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://bsxwnbfok6doq"]
+
+[ext_resource type="Texture2D" uid="uid://bbycedwcxbiis" path="res://Assets/Assets-Nexus Factory/Screen/Nexus Factory Opening_cleanup.png" id="1_hw0pv"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_kqesl"]
+blend_mode = 1
+
+[sub_resource type="ImageTexture" id="ImageTexture_7m66r"]
+
+[node name="Menu" type="CanvasLayer"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -1)
+texture = ExtResource("1_hw0pv")
+
+[node name="MenuButton" type="MenuButton" parent="."]
+material = SubResource("CanvasItemMaterial_kqesl")
+offset_right = 8.0
+offset_bottom = 8.0
+mouse_default_cursor_shape = 2
+text = "Start"
+item_count = 1
+popup/item_0/icon = SubResource("ImageTexture_7m66r")
