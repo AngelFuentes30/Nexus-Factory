@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d4bq570mrvpr0"
-path="res://.godot/imported/Transport_rect_lvl1.png-61aa7ab84077cf9eea727ae58fb41db0.ctex"
+uid="uid://khq6kbm5ogyl"
+path="res://.godot/imported/Transport_rect_lvl1_godot.png-d548c29a2b0dee883f3821fc83559777.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Assets-Nexus Factory/Estructuras/Transport/lvl1/Transport_rect_lvl1.png"
-dest_files=["res://.godot/imported/Transport_rect_lvl1.png-61aa7ab84077cf9eea727ae58fb41db0.ctex"]
+source_file="res://Assets/Assets-Nexus Factory/Estructuras/Transport/lvl1/Transport_rect_lvl1_godot.png"
+dest_files=["res://.godot/imported/Transport_rect_lvl1_godot.png-d548c29a2b0dee883f3821fc83559777.ctex"]
 
 [params]
 

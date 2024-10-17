@@ -1,0 +1,90 @@
+[gd_scene load_steps=12 format=3 uid="uid://d3k1v08b54tpg"]
+
+[ext_resource type="Texture2D" uid="uid://khq6kbm5ogyl" path="res://Assets/Assets-Nexus Factory/Estructuras/Transport/lvl1/Transport_rect_lvl1_godot.png" id="1_1k74s"]
+[ext_resource type="Texture2D" uid="uid://4ruxd7t1q7e0" path="res://Assets/Assets-Nexus Factory/Estructuras/Transport/lvl1/Transport_rect_lvl1-Sheet.png" id="2_qay43"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y4601"]
+atlas = ExtResource("1_1k74s")
+region = Rect2(640, 0, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cn2xf"]
+atlas = ExtResource("1_1k74s")
+region = Rect2(960, 0, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eruld"]
+atlas = ExtResource("1_1k74s")
+region = Rect2(2240, 0, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3p8k5"]
+atlas = ExtResource("1_1k74s")
+region = Rect2(1920, 0, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d2ise"]
+atlas = ExtResource("1_1k74s")
+region = Rect2(1280, 0, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ye5yh"]
+atlas = ExtResource("1_1k74s")
+region = Rect2(1600, 0, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gahbd"]
+atlas = ExtResource("2_qay43")
+region = Rect2(0, 0, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_12e2b"]
+atlas = ExtResource("2_qay43")
+region = Rect2(320, 0, 320, 320)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_uyqxw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y4601")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cn2xf")
+}],
+"loop": true,
+"name": &"Rect_Down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eruld")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3p8k5")
+}],
+"loop": true,
+"name": &"Rect_Left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d2ise")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ye5yh")
+}],
+"loop": true,
+"name": &"Rect_Right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gahbd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_12e2b")
+}],
+"loop": true,
+"name": &"Rect_Up",
+"speed": 5.0
+}]
+
+[node name="Animated_Transport_lvl1" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_uyqxw")
+animation = &"Rect_Up"
+frame_progress = 0.297754

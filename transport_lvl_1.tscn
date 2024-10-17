@@ -1,16 +1,19 @@
 [gd_scene load_steps=4 format=3 uid="uid://ccvgl1nqv4ig2"]
 
 [ext_resource type="Script" path="res://transport_lvl_1.gd" id="1_ji10j"]
-[ext_resource type="Texture2D" uid="uid://biih5tfuglgvx" path="res://Assets/Assets-Nexus Factory/Estructuras/Transport/lvl1/Transport_rotate_lvl1.png" id="2_iwljy"]
+[ext_resource type="PackedScene" uid="uid://d3k1v08b54tpg" path="res://animated_transport_lvl_1.tscn" id="2_n0vot"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kg3ix"]
 size = Vector2(32, 32)
 
 [node name="Transport_lvl1" type="Area2D"]
+collision_layer = 3
+collision_mask = 3
 script = ExtResource("1_ji10j")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_iwljy")
+[node name="Animated_Transport_lvl1" parent="." instance=ExtResource("2_n0vot")]
+position = Vector2(5.96046e-08, -5.96046e-08)
+scale = Vector2(0.1, 0.1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_kg3ix")

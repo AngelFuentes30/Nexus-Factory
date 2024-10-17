@@ -1,16 +1,26 @@
-[gd_scene load_steps=4 format=3 uid="uid://gtrdi6j7s4yh"]
+[gd_scene load_steps=5 format=3 uid="uid://gtrdi6j7s4yh"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_xke7m"]
 [ext_resource type="PackedScene" uid="uid://3oescha1p1t5" path="res://sprite_animated.tscn" id="2_p0ike"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0an8e"]
-radius = 4.0
-height = 16.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6qmpb"]
+size = Vector2(7.5, 4)
 
-[node name="CharacterBody2D" type="CharacterBody2D" groups=["Transportable"]]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0an8e"]
+radius = 2.0
+height = 4.0
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("1_xke7m")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CapsuleShape2D_0an8e")
-
 [node name="SpriteAnimated" parent="." instance=ExtResource("2_p0ike")]
+
+[node name="Foot" type="CollisionShape2D" parent="." groups=["Transportable"]]
+position = Vector2(0, 6)
+shape = SubResource("RectangleShape2D_6qmpb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("CapsuleShape2D_0an8e")

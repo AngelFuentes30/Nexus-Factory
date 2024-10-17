@@ -1,18 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://d1eho2q047wrx"]
+[gd_scene load_steps=3 format=3 uid="uid://bct2pygiacq3c"]
 
-[ext_resource type="Script" path="res://crude_iron.gd" id="1_gf1tb"]
 [ext_resource type="Texture2D" uid="uid://c6yt7ecnte82f" path="res://Assets/Assets-Nexus Factory/Items/Crude Minerals/Crude Iron.png" id="2_pvn2e"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_vulre"]
-radius = 62.3939
+[sub_resource type="CircleShape2D" id="CircleShape2D_85x0k"]
+radius = 7.07107
 
-[node name="Crude_Iron" type="Area2D" groups=["Transportable"]]
-scale = Vector2(0.05, 0.05)
-script = ExtResource("1_gf1tb")
+[node name="Crude_iron" type="CharacterBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_pvn2e")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1, -1)
-shape = SubResource("CircleShape2D_vulre")
+shape = SubResource("CircleShape2D_85x0k")
