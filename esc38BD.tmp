@@ -19,4 +19,4 @@ position = Vector2(64, -2)
 zoom = Vector2(5, 5)
 
 [node name="GeneradordeCintas" parent="Grid/CharacterBody2D" instance=ExtResource("1_kbkwu")]
-position = Vector2(-93, 46)
+position = Vector2(-101, 54)

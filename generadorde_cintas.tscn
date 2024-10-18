@@ -1,6 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://clywhuwxi0103"]
+[gd_scene load_steps=3 format=3 uid="uid://clywhuwxi0103"]
 
 [ext_resource type="Script" path="res://Generador_Cinta.gd" id="1_55kk1"]
+[ext_resource type="Texture2D" uid="uid://kyket4vp5jln" path="res://Assets/Assets-Nexus Factory/Estructuras/Transport/lvl1/Transport_rect_lvl1.png" id="2_5l1s2"]
 
 [node name="GeneradordeCintas" type="Node2D"]
+scale = Vector2(0.1, 0.1)
 script = ExtResource("1_55kk1")
+
+[node name="ToggleButton" type="Button" parent="."]
+unique_name_in_owner = true
+offset_left = -62.0
+offset_top = -112.0
+offset_right = 64.0
+offset_bottom = -44.0
+text = "Cinta"
+
+[node name="Sprite2D" type="Sprite2D" parent="ToggleButton"]
+position = Vector2(62, 114)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_5l1s2")
