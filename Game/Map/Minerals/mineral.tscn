@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwohh4wn17psv"]
+
+[ext_resource type="Script" path="res://Game/Map/Minerals/mineral.gd" id="1_oee1s"]
+[ext_resource type="PackedScene" uid="uid://cpbrwgbxvdn3d" path="res://Game/Map/Minerals/iron.tscn" id="2_lad3f"]
+
+[node name="Mineral" type="Node2D"]
+script = ExtResource("1_oee1s")
+
+[node name="Iron" parent="." instance=ExtResource("2_lad3f")]

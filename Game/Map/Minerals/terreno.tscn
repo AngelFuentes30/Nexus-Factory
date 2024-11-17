@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvig7i2ucyd1c"]
+
+[ext_resource type="PackedScene" uid="uid://2m0novgk6hjv" path="res://Game/Map/World/sand.tscn" id="1_j0x55"]
+
+[node name="Terreno" type="Node2D"]
+
+[node name="Sand" parent="." instance=ExtResource("1_j0x55")]

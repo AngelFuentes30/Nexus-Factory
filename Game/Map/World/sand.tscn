@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://2m0novgk6hjv"]
+
+[ext_resource type="Texture2D" uid="uid://bh0nwtpm6m3p" path="res://Assets/Assets-Nexus Factory/Terreno/Desert-biome/Sand.png" id="1_5k48k"]
+
+[node name="Sand" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_5k48k")

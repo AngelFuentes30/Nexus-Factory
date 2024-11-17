@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://cij2k1700tvmj"]
+
+[ext_resource type="Script" path="res://Game/Map/Minerals/coal.gd" id="1_q00tx"]
+[ext_resource type="Texture2D" uid="uid://cjd0l7sowam4o" path="res://Assets/Assets-Nexus Factory/Terreno/Minerales/Coal.png" id="1_q12b0"]
+
+[node name="Coal" type="Node2D"]
+script = ExtResource("1_q00tx")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_q12b0")

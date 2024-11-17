@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://clywhuwxi0103"]
 
-[ext_resource type="Script" path="res://Generador_Cinta.gd" id="1_55kk1"]
+[ext_resource type="Script" path="res://Game/layout/Generador_Cinta.gd" id="1_55kk1"]
 [ext_resource type="Texture2D" uid="uid://kyket4vp5jln" path="res://Assets/Assets-Nexus Factory/Estructuras/Transport/lvl1/Transport_rect_lvl1.png" id="2_5l1s2"]
 
 [node name="GeneradordeCintas" type="Node2D"]

@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-var speed: float = 45.0
+var speed: float = 600.0
 var base_speed: float = 45.0  # Velocidad normal
 var on_belt_count = 0  # Contador de cuántas cintas afectan al jugador
 var animated_sprite: AnimatedSprite2D

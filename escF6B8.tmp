@@ -1,13 +1,15 @@
-[gd_scene load_steps=5 format=3 uid="uid://ct6uuesjw8uu7"]
+[gd_scene load_steps=6 format=3 uid="uid://ct6uuesjw8uu7"]
 
 [ext_resource type="PackedScene" uid="uid://clywhuwxi0103" path="res://generadorde_cintas.tscn" id="1_kbkwu"]
 [ext_resource type="PackedScene" uid="uid://ba5ck244ygnwo" path="res://grid.tscn" id="1_pc1md"]
 [ext_resource type="PackedScene" uid="uid://gtrdi6j7s4yh" path="res://player.tscn" id="3_d55gd"]
 [ext_resource type="PackedScene" uid="uid://bct2pygiacq3c" path="res://crude_iron.tscn" id="3_o26e2"]
+[ext_resource type="Script" path="res://camera_player.gd" id="4_oxmay"]
 
 [node name="Escena de Pruebas" type="Node2D"]
 
 [node name="Grid" parent="." instance=ExtResource("1_pc1md")]
+unique_name_in_owner = true
 
 [node name="Crude_iron" parent="Grid" groups=["Transportable"] instance=ExtResource("3_o26e2")]
 position = Vector2(20, -3)
@@ -15,8 +17,12 @@ position = Vector2(20, -3)
 [node name="CharacterBody2D" parent="Grid" instance=ExtResource("3_d55gd")]
 position = Vector2(64, -2)
 
-[node name="Camera2D" type="Camera2D" parent="Grid/CharacterBody2D"]
+[node name="Camera_Player" type="Camera2D" parent="Grid/CharacterBody2D"]
+unique_name_in_owner = true
 zoom = Vector2(5, 5)
+script = ExtResource("4_oxmay")
 
 [node name="GeneradordeCintas" parent="Grid/CharacterBody2D" instance=ExtResource("1_kbkwu")]
 position = Vector2(-93, 46)
+
+[connection signal="mouse_click_position" from="Grid/CharacterBody2D/Camera_Player" to="Grid/CharacterBody2D/GeneradordeCintas" method="_on_mouse_click_position"]
