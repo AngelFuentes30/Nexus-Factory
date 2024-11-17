@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://j0u33wjgs5qa"]
+
+[ext_resource type="Script" path="res://Game/Map/Minerals/cuarso.gd" id="1_8micc"]
+[ext_resource type="Texture2D" uid="uid://ce5ayrcy782y5" path="res://Assets/Assets-Nexus Factory/Terreno/Minerales/Cuarso.png" id="1_j10ef"]
+
+[node name="Cuarso" type="Node2D"]
+script = ExtResource("1_8micc")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_j10ef")

@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlnveeafepfvn"]
+
+[ext_resource type="Script" path="res://Game/Map/Minerals/copper.gd" id="1_3ng4n"]
+[ext_resource type="Texture2D" uid="uid://cqvdn0y21t8dn" path="res://Assets/Assets-Nexus Factory/Terreno/Minerales/Copper.png" id="1_11gtj"]
+
+[node name="Copper" type="Node2D"]
+script = ExtResource("1_3ng4n")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_11gtj")

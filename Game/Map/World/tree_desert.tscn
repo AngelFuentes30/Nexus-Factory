@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cd26fxjco1vs1"]
+
+[ext_resource type="Texture2D" uid="uid://mmfjioowglpc" path="res://Assets/Assets-Nexus Factory/Terreno/objects/Desert_Tree.png" id="1_l31dg"]
+
+[node name="Tree_Desert" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_l31dg")
+offset = Vector2(0, -16)

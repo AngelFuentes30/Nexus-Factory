@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bjvnsaqshgw44"]
+
+[ext_resource type="Texture2D" uid="uid://xhlqdu3mon0n" path="res://Assets/Assets-Nexus Factory/Terreno/Liquids/Water.png" id="1_xrwhw"]
+
+[node name="Water" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_xrwhw")

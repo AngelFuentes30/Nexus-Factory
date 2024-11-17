@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://cak2qg5dqbsvk"]
+[gd_scene load_steps=7 format=3 uid="uid://cak2qg5dqbsvk"]
 
 [ext_resource type="Script" path="res://Game/Map/mapa.gd" id="1_pnj81"]
 [ext_resource type="PackedScene" uid="uid://cwohh4wn17psv" path="res://Game/Map/Minerals/mineral.tscn" id="2_ga30n"]
 [ext_resource type="PackedScene" uid="uid://dvig7i2ucyd1c" path="res://Game/Map/Minerals/terreno.tscn" id="2_q21gq"]
 [ext_resource type="PackedScene" uid="uid://gtrdi6j7s4yh" path="res://Game/Player/player.tscn" id="3_03f3o"]
+[ext_resource type="PackedScene" uid="uid://bjvnsaqshgw44" path="res://Game/Map/World/water.tscn" id="3_mph3h"]
+[ext_resource type="PackedScene" uid="uid://cd26fxjco1vs1" path="res://Game/Map/World/tree_desert.tscn" id="5_nb8m6"]
 
 [node name="Mapa" type="Node2D"]
 script = ExtResource("1_pnj81")
@@ -13,7 +15,11 @@ format = 2
 
 [node name="Terreno" parent="." instance=ExtResource("2_q21gq")]
 
+[node name="Water" parent="." instance=ExtResource("3_mph3h")]
+
 [node name="Mineral" parent="." instance=ExtResource("2_ga30n")]
+
+[node name="Tree_Desert" parent="." instance=ExtResource("5_nb8m6")]
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_03f3o")]
 
